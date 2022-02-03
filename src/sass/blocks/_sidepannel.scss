@@ -1,0 +1,53 @@
+.sidepannel {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    z-index: 3;
+    top: 230px;
+    left: 50px;
+    &__divider {
+        width: 0px;
+        height: 70px;
+        border: 1px solid #000000;
+        background-color: #000000;
+    }
+    &__text {
+        height: 150px;
+        width: 25px;
+        span {
+            display: block;
+            transform: rotate(-90deg) translateX(-62px) translateY(-64px);
+            width: 150px;
+            text-align: right;
+        }
+    }
+    &__link {
+        position: relative;
+        z-index: 1;
+        &:before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            background-color: $maincolor;
+            top: 13px;
+            left: 10px;
+            width: 0px;
+            height: 0px;
+            border-radius: 100%;
+            opacity: 0;
+            transition: 0.3s;
+        } 
+        &:hover {
+            &:before{
+                width: 30px;
+                height: 30px;
+                transform: translate(-50%, -50%);
+                opacity: 1;
+                transition: 0.3s;
+            }
+        }
+    }
+}

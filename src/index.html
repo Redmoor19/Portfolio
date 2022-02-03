@@ -44,9 +44,96 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <h1>    
-        Hello world!
-    </h1>
+    <section class="promo">
+        <div onclick="toggleSidebar()" class="hamburger">
+            <div class="hamburger__icon"></div>
+        </div>
+        <aside class="sidepannel">
+            <a href="#" class="sidepannel__link"><img src="icons/social/facebook.svg" alt="facebook"></a>
+            <a href="#" class="sidepannel__link"><img src="icons/social/instagram.svg" alt="instagram"></a>
+            <a href="#" class="sidepannel__link"><img src="icons/social/github.svg" alt="github"></a>
+            <div class="sidepannel__divider"></div>
+            <div class="sidepannel__text"><span>Социальные сети</span></div>
+        </aside>
+        <div class="container">
+            <div class="title title_fz16 promo__subtitle">Меня зовут Александра Смит</div>
+            <h1 class="title title_fz48 promo__title">Я web-разработчик из города Москва</h1>
+            <div class="promo__btns">
+                <a href="#" class="promo__link btn">Портфолио</a>
+                <a href="#" class="promo__link btn btn_hiden">Про меня</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sidemenu" class="sidemenu">
+        <div class="sidemenu__bar">
+            <div onclick="toggleSidebar ()" class="sidemenu__cross"></div>
+            <div class="sidemenu__links">
+                <div onclick="toggleSidebar()" class="sidemenu__item"><a href="#aboutme">ПРО МЕНЯ</a></div>
+                <div onclick="toggleSidebar()" class="sidemenu__item"><a href="#">МОЙ ОПЫТ</a></div>
+                <div onclick="toggleSidebar()" class="sidemenu__item"><a href="#">МОИ НАВЫКИ</a></div>
+                <div onclick="toggleSidebar()" class="sidemenu__item"><a href="#">МОИ РАБОТЫ</a></div>
+                <div onclick="toggleSidebar()" class="sidemenu__item"><a href="#">ПРАЙС-ЛИСТ</a></div>
+                <div onclick="toggleSidebar()" class="sidemenu__item"><a href="#">КОНТАКТЫ</a></div>
+            </div>
+
+            <div class="sidemenu__socials">
+                <a href="" class="sidemenu__social_link"><img class="rotate" src="icons/social/github.svg" alt="github"></a>
+                <a href="" class="sidemenu__social_link"><img class="rotate" src="icons/social/instagram.svg" alt="instagram"></a>
+                <a href="" class="sidemenu__social_link"><img class="rotate" src="icons/social/facebook.svg" alt="facebook"></a>
+            </div>
+        </div>
+        <div onclick="toggleSidebar ()" class="sidemenu__cover"></div>
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <div class="container">
+            <div class="aboutme__grid">
+                <div class="aboutme__myimage">
+                    <img src="img/main_photo.jpg" alt="myimage">
+                </div>
+                <div class="aboutme__information">
+                    <div class="aboutme__subtitle title_fz16">Про меня</div>
+                    <div class="aboutme__title title">Меня зовут Александра</div>
+                    <div class="aboutme__devider"></div>
+                    <div class="aboutme__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed natus sapiente doloremque, quam rem quasi dolores soluta aspernatur iste illo? Corrupti id excepturi odio harum ad quisquam illum tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolorem, architecto eius obcaecati corporis accusamus consectetur aliquam autem ducimus veritatis nam nobis dignissimos minima culpa at possimus labore maxime accusantium.</div>
+                </div>
+                <div class="aboutme__skills">
+                    <div class="aboutme__skills_item">
+                        <div class="aboutme__skills_item_icon">
+                            <img src="icons/about_me/web_development.svg" alt="">
+                        </div>
+                        <div class="aboutme__skills_item_descr">
+                            <div class="aboutme__skills_item_title title_fz14">Web-разработка</div>
+                            <div class="aboutme__skills_item_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio accusamus assumenda a velit. Porro maxime reprehenderit beatae labore aut repudiandae unde facere cupiditate, laborum quam sit atque consectetur aliquid quod.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutme__skills_item">
+                        <div class="aboutme__skills_item_icon">
+                            <img src="icons/about_me/mobile_dev.svg" alt="">
+                        </div>
+                        <div class="aboutme__skills_item_descr">
+                            <div class="aboutme__skills_item_title title_fz14">Разработка приложений</div>
+                            <div class="aboutme__skills_item_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio accusamus assumenda a velit. Porro maxime reprehenderit beatae labore aut repudiandae unde facere cupiditate, laborum quam sit atque consectetur aliquid quod.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutme__skills_item">
+                        <div class="aboutme__skills_item_icon">
+                            <img src="icons/about_me/design.svg" alt="">
+                        </div>
+                        <div class="aboutme__skills_item_descr">
+                            <div class="aboutme__skills_item_title title_fz14">UI/UX Design</div>
+                            <div class="aboutme__skills_item_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio accusamus assumenda a velit. Porro maxime reprehenderit beatae labore aut repudiandae unde facere cupiditate, laborum quam sit atque consectetur aliquid quod.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <script src="js/script.js"></script>
 </body>

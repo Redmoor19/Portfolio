@@ -1,0 +1,101 @@
+.sidemenu {
+    &__bar {
+        position: fixed;
+        width: 345px;
+        height: 100vh;
+        left: -345px;
+        top: 0;
+        background-color: $maincolor;
+        z-index: 100;
+        transition: all 0.5s;
+    }
+    &__cover {
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        visibility: hidden;
+        transition: all 0.5s;
+        background-color: #fff;
+        opacity: 0;
+    }
+    &__active {
+        .sidemenu {
+            &__bar {
+                left: 0px;
+                transition: all 0.5s;
+            }
+            &__cover {
+                visibility: visible;
+                transition: all 0.5s;
+                opacity: 0.7;
+            }
+        }
+    }
+    &__cross {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        &:before {
+            content: "";
+            display: block;
+            width: 38px;
+            height: 2px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            background-color: #000;
+            transform:translateY(16px) rotate(45deg);
+
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 38px;
+            height: 2px;
+            border: 2px solid #000;
+            background-color: #000;
+            border-radius: 5px;
+            transform:translateY(12px) rotate(-45deg);
+        }
+    }
+    &__links {
+        margin-top: 140px;
+        margin-left: 75px;
+    }
+    &__item {
+        font-weight: bold;
+        position: relative;
+        font-size: 24px;
+        line-height: 36px;
+        a {
+            color: #FFFFFF;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: -35px;
+                top: 10px;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #000000;
+                border-radius: 100%;
+            }
+        }
+    }
+    &__socials {
+        position: absolute;
+        width: 90px;
+        left: 127px;
+        bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
