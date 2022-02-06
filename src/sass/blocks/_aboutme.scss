@@ -27,7 +27,7 @@
     &__title {
         margin-top: 6px;
     }
-    &__devider {
+    &__divider {
         width: 60px;
         height: 0px;
         border: 2px solid $maincolor;
@@ -43,6 +43,7 @@
         &_item {
             display: flex;
             flex-direction: row;
+            margin-top: 10px;
             &_icon {
                 position: relative;
                 min-width: 60px;

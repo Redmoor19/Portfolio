@@ -1,0 +1,110 @@
+.resume {
+    padding-top: 126px;
+    &__title {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        @include before_circle;
+        &:before {
+            left: 48.5%;
+        }
+
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__divider {
+        border: 1px solid $maincolor;
+        width: 60px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__wrapper {
+        padding: 0 65px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column{
+        &-title {
+            position: relative;
+            padding-left: 45px;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $maincolor;
+                border-radius: 100%;
+                z-index: -1;
+                left: 0;
+                top: 25%;
+            }
+        }
+        ul {
+            list-style-type: none;
+            position: relative;
+            &:before {
+                content: "";
+                width: 1px;
+                height: 120%;
+                position: absolute;
+                background-color: #000;
+                left: 7px;
+                top: -52px;
+            }
+            li {
+                position: relative;
+                margin-left: 45px;
+                margin-top: 45px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 38px;
+                    background-color: #000;
+                    left: -10%;
+                    top: 12px;
+                }
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        &-head {
+            display: flex;
+            flex-direction: row;
+            &-descr {
+                margin-left: 20px;
+                h4 {
+                    margin: 0;
+                }
+            }
+        }
+        &-icon {
+            width: 50px;
+            align-self: flex-end;
+            position: relative;
+            @include before_circle;
+                &:before {
+                    top: -20px;
+                }
+            img {
+                display: block;
+                margin-left: 20px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        
+    }
+}
