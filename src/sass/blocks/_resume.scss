@@ -1,23 +1,7 @@
 .resume {
     padding-top: 126px;
-    &__title {
-        text-align: center;
-        position: relative;
-        z-index: 1;
-        @include before_circle;
-        &:before {
-            left: 48.5%;
-        }
-
-    }
     &__subtitle {
         text-align: center;
-    }
-    &__divider {
-        border: 1px solid $maincolor;
-        width: 60px;
-        margin: 0 auto;
-        margin-top: 25px;
     }
     &__wrapper {
         padding: 0 65px;
@@ -107,4 +91,10 @@
         }
         
     }
+}
+.divider {
+    border: 1px solid $maincolor;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 25px;
 }
