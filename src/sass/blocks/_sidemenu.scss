@@ -63,7 +63,7 @@
         }
     }
     &__links {
-        margin-top: 140px;
+        margin-top: 125px;
         margin-left: 75px;
     }
     &__item {
@@ -71,6 +71,7 @@
         position: relative;
         font-size: 24px;
         line-height: 36px;
+        margin-top: 15px;
         a {
             color: #FFFFFF;
             &:before {
@@ -89,7 +90,9 @@
     &__socials {
         position: absolute;
         width: 90px;
-        left: 127px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
         bottom: 50px;
         display: flex;
         justify-content: space-between;

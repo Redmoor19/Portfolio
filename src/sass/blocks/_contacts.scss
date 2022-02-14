@@ -3,10 +3,8 @@
     padding-bottom: 50px;
     &__wrapper {
         display: grid;
-        grid-template-columns: auto 70px 1fr ;
-    }
-    &__content {
-        grid-column-start: 3;
+        grid-template-columns: auto 1fr ;
+        column-gap: 70px;
     }
     &__subtitle {
         position: relative;
