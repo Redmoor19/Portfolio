@@ -40,4 +40,16 @@
             top: 8px;
         }
     }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        z-index: -1;
+        background-color: #fff;
+        border-radius: 100%;
+        top: -12px;
+        left: -4px;
+        filter: blur(2px)
+    }
 }

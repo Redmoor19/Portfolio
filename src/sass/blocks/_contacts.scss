@@ -103,4 +103,17 @@
             margin-right: 10px;
         }
     }
+    &__myimage {
+        max-width: 420px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.whatsapp {
+    img {
+        width: 20px;
+        height: 20px;
+        transform: rotate(-90deg); 
+    }
 }
